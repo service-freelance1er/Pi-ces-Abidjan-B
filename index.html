@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111111">
+<title>Pièces Auto Kouassi Abidjan</title>
+<meta name="description" content="Pièces Auto Kouassi Abidjan : découvrez notre catalogue de pièces automobiles et commandez sur WhatsApp.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+:root {
+  --orange:#f47b20;
+  --dark:#151515;
+  --dark2:#222;
+  --light:#f5f5f5;
+  --white:#fff;
+  --gray:#777;
+  --border:#e9e9e9;
+  --green:#16a34a;
+  --shadow:0 8px 30px rgba(0,0,0,.08);
+}
+* {box-sizing:border-box;margin:0;padding:0}
+html {scroll-behavior:smooth}
+body {
+  font-family:'Poppins',sans-serif;
+  background:var(--light);
+  color:var(--dark);
+  line-height:1.6;
+}
+button,input,select {font:inherit}
+button {cursor:pointer}
+a {text-decoration:none;color:inherit}
+.container {width:min(1180px,92%);margin:auto}
+.topbar {
+  background:#0c0c0c;color:#ddd;
+  padding:9px 0;font-size:12px;
+}
+.topbar .container {
+  display:flex;justify-content:space-between;
+  flex-wrap:wrap;gap:8px;
+}
+.topbar i {color:var(--orange);margin-right:6px}
+header {
+  background:#fff;position:sticky;top:0;
+  z-index:1000;box-shadow:0 2px 15px #0000000c;
+}
+.nav {
+  min-height:76px;display:flex;
+  justify-content:space-between;align-items:center;gap:20px;
+}
+.logo {display:flex;align-items:center;gap:10px}
+.logo-icon {
+  width:46px;height:46px;background:var(--orange);
+  color:white;border-radius:12px;
+  display:grid;place-items:center;font-size:23px;
+}
+.logo h1 {font-size:17px;line-height:1.2;font-weight:800}
+.logo span {color:var(--orange)}
+.logo small {display:block;font-size:10px;color:#888;font-weight:500}
+.nav-links {display:flex;align-items:center;gap:23px}
+.nav-links a {font-size:13px;font-weight:600}
+.nav-links a:hover {color:var(--orange)}
+.nav-actions {display:flex;align-items:center;gap:10px}
+.cart-btn {
+  border:0;background:var(--dark);color:#fff;
+  padding:11px 15px;border-radius:9px;
+  position:relative;
+}
+.cart-count {
+  background:var(--orange);color:white;
+  border-radius:50%;font-size:10px;
+  min-width:19px;height:19px;
+  display:grid;place-items:center;
+  position:absolute;top:-7px;right:-7px;
+}
+.menu-btn {
+  display:none;border:0;background:#f2f2f2;
+  border-radius:8px;padding:10px;font-size:19px;
+}
+.hero {
+  background:linear-gradient(90deg,#101010ed,#1010108a),
+  url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1800&q=85') center/cover;
+  color:#fff;padding:90px 0;
+}
+.hero-content {max-width:650px}
+.hero-label {
+  display:inline-block;background:#f47b2030;
+  color:#ffad69;border:1px solid #f47b2070;
+  padding:7px 13px;border-radius:30px;
+  font-size:12px;margin-bottom:18px;
+}
+.hero h2 {font-size:clamp(32px,5vw,55px);line-height:1.15;margin-bottom:18px}
+.hero h2 span {color:var(--orange)}
+.hero p {color:#ddd;max-width:540px;font-size:14px}
+.hero-buttons {display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}
+.btn {
+  display:inline-flex;align-items:center;justify-content:center;
+  gap:9px;padding:13px 20px;border-radius:9px;
+  font-weight:700;font-size:13px;border:0;
+}
+.btn-orange {background:var(--orange);color:white}
+.btn-orange:hover {background:#dc6813}
+.btn-outline {border:1px solid #ffffff80;color:white}
+.features {padding:27px 0;background:#fff}
+.feature-grid {
+  display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
+}
+.feature {display:flex;align-items:center;gap:12px}
+.feature i {font-size:24px;color:var(--orange)}
+.feature strong {display:block;font-size:12px}
+.feature small {font-size:10px;color:var(--gray)}
+.section {padding:65px 0}
+.section-heading {text-align:center;margin-bottom:30px}
+.section-heading span {
+  color:var(--orange);font-size:11px;
+  font-weight:800;text-transform:uppercase;letter-spacing:2px;
+}
+.section-heading h2 {font-size:30px;margin:5px 0}
+.section-heading p {font-size:13px;color:var(--gray)}
+.catalog {background:#f5f5f5}
+.toolbar {
+  display:flex;gap:12px;flex-wrap:wrap;
+  justify-content:space-between;margin-bottom:22px;
+}
+.search-box {
+  background:white;border:1px solid var(--border);
+  border-radius:9px;display:flex;align-items:center;
+  padding:0 14px;flex:1;min-width:220px;
+}
+.search-box i {color:var(--gray)}
+.search-box input {
+  width:100%;border:0;outline:0;padding:13px 10px;
+  background:transparent;font-size:12px;
+}
+.toolbar select {
+  border:1px solid var(--border);background:white;
+  padding:12px;border-radius:9px;min-width:170px;
+  outline:0;font-size:12px;
+}
+.category-list {
+  display:flex;gap:9px;overflow-x:auto;
+  padding-bottom:15px;margin-bottom:12px;
+}
+.category-btn {
+  white-space:nowrap;border:1px solid #ddd;
+  background:#fff;padding:9px 16px;
+  border-radius:30px;font-size:11px;font-weight:600;
+}
+.category-btn.active,.category-btn:hover {
+  background:var(--orange);color:white;border-color:var(--orange);
+}
+.product-grid {
+  display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
+}
+.product-card {
+  background:white;border-radius:13px;overflow:hidden;
+  box-shadow:0 4px 18px #00000008;
+  transition:.25s;display:flex;flex-direction:column;
+}
+.product-card:hover {transform:translateY(-5px);box-shadow:var(--shadow)}
+.product-image {
+  height:190px;background:#f1f1f1;
+  position:relative;overflow:hidden;
+}
+.product-image img {width:100%;height:100%;object-fit:cover}
+.product-category {
+  position:absolute;top:12px;left:12px;
+  background:var(--orange);color:white;
+  padding:5px 10px;border-radius:30px;font-size:9px;
+}
+.product-info {padding:16px;display:flex;flex-direction:column;flex:1}
+.product-info h3 {font-size:14px;line-height:1.4;margin-bottom:7px}
+.product-description {
+  font-size:11px;color:var(--gray);
+  min-height:38px;margin-bottom:12px;
+}
+.product-bottom {
+  display:flex;justify-content:space-between;
+  align-items:center;gap:8px;margin-top:auto;
+}
+.product-price {font-weight:800;color:var(--orange);font-size:16px}
+.product-price small {font-size:9px;color:#888}
+.add-btn {
+  border:0;background:var(--dark);color:white;
+  border-radius:8px;padding:10px 12px;font-size:11px;
+}
+.add-btn:hover {background:var(--orange)}
+.empty-state {
+  text-align:center;padding:50px 15px;
+  color:var(--gray);grid-column:1/-1;
+}
+.empty-state i {font-size:35px;color:#bbb;margin-bottom:12px}
+.about-grid {
+  display:grid;grid-template-columns:1fr 1fr;
+  align-items:center;gap:45px;
+}
+.about-image img {
+  width:100%;height:350px;object-fit:cover;border-radius:15px;
+}
+.about-text h2 {font-size:30px;line-height:1.3;margin:10px 0 15px}
+.about-text p {font-size:13px;color:var(--gray);margin-bottom:14px}
+.about-text li {list-style:none;font-size:12px;margin:12px 0}
+.about-text li i {color:var(--orange);margin-right:9px}
+.contact-section {background:#171717;color:white}
+.contact-grid {
+  display:grid;grid-template-columns:1fr 1fr;gap:35px;
+}
+.contact-section .section-heading {text-align:left}
+.contact-section .section-heading p {color:#aaa}
+.contact-card {
+  background:#242424;border:1px solid #ffffff12;
+  border-radius:12px;padding:25px;margin-bottom:13px;
+}
+.contact-card i {color:var(--orange);font-size:20px;margin-bottom:10px}
+.contact-card h3 {font-size:14px}
+.contact-card p {font-size:12px;color:#bbb}
+.contact-map {
+  min-height:300px;border-radius:12px;
+  background:#292929;display:grid;place-items:center;
+  text-align:center;padding:25px;
+}
+.contact-map i {font-size:40px;color:var(--orange);margin-bottom:12px}
+footer {background:#0c0c0c;color:white;padding:40px 0 20px}
+.footer-grid {
+  display:grid;grid-template-columns:2fr 1fr 1fr;
+  gap:30px;margin-bottom:30px;
+}
+footer h3 {font-size:15px;margin-bottom:14px}
+footer p,footer a {font-size:11px;color:#aaa}
+footer a {display:block;margin:8px 0}
+footer a:hover {color:var(--orange)}
+.footer-bottom {
+  border-top:1px solid #ffffff18;padding-top:17px;
+  text-align:center;color:#777;font-size:10px;
+}
+.whatsapp-float {
+  position:fixed;right:20px;bottom:20px;
+  width:55px;height:55px;border-radius:50%;
+  display:grid;place-items:center;background:#20c866;
+  color:white;font-size:29px;z-index:900;
+  box-shadow:0 5px 20px #0003;
+}
+.cart-panel {
+  position:fixed;inset:0;z-index:2000;
+  background:#0008;display:none;justify-content:flex-end;
+}
+.cart-panel.open {display:flex}
+.cart-content {
+  width:min(430px,100%);height:100%;
+  background:white;padding:23px;display:flex;
+  flex-direction:column;overflow:auto;
+}
+.cart-header {
+  display:flex;justify-content:space-between;
+  align-items:center;padding-bottom:18px;border-bottom:1px solid #eee;
+}
+.cart-header h2 {font-size:19px}
+.close-cart {
+  border:0;background:#eee;width:35px;height:35px;
+  border-radius:50%;font-size:18px;
+}
+.cart-items {flex:1;padding:15px 0}
+.cart-item {
+  display:flex;gap:12px;padding:12px 0;
+  border-bottom:1px solid #eee;
+}
+.cart-item img {width:70px;height:70px;object-fit:cover;border-radius:8px}
+.cart-item-info {flex:1}
+.cart-item-info strong {font-size:12px;display:block}
+.cart-item-info small {color:var(--orange);font-weight:700}
+.quantity {display:flex;align-items:center;gap:10px;margin-top:7px}
+.quantity button {
+  border:0;background:#eee;width:25px;height:25px;border-radius:5px;
+}
+.remove-item {border:0;background:none;color:#d33;margin-left:auto}
+.cart-total {
+  border-top:1px solid #eee;padding-top:18px;
+}
+.cart-total div {display:flex;justify-content:space-between;font-weight:800;margin-bottom:15px}
+.checkout-btn {
+  background:#16a34a;color:white;border:0;
+  padding:14px;border-radius:9px;width:100%;font-weight:700;
+}
+.toast {
+  position:fixed;bottom:90px;left:50%;
+  transform:translateX(-50%);background:#222;color:white;
+  padding:12px 20px;border-radius:8px;font-size:12px;
+  z-index:3000;opacity:0;pointer-events:none;transition:.3s;
+}
+.toast.show {opacity:1}
+@media(max-width:900px) {
+  .product-grid {grid-template-columns:repeat(3,1fr)}
+  .nav-links {gap:12px}
+}
+@media(max-width:700px) {
+  .nav {min-height:66px}
+  .menu-btn {display:block}
+  .nav-links {
+    display:none;position:absolute;top:66px;left:0;right:0;
+    background:white;padding:20px 5%;flex-direction:column;
+    align-items:flex-start;box-shadow:0 10px 15px #0001;
+  }
+  .nav-links.show {display:flex}
+  .nav-links a {padding:5px 0}
+  .logo h1 {font-size:14px}
+  .logo-icon {width:39px;height:39px;font-size:19px}
+  .hero {padding:70px 0}
+  .feature-grid {grid-template-columns:repeat(2,1fr)}
+  .product-grid {grid-template-columns:repeat(2,1fr);gap:12px}
+  .product-image {height:145px}
+  .product-info {padding:11px}
+  .product-info h3 {font-size:12px}
+  .product-description {font-size:10px}
+  .product-price {font-size:13px}
+  .add-btn {padding:9px;font-size:10px}
+  .about-grid,.contact-grid {grid-template-columns:1fr;gap:25px}
+  .about-image img {height:240px}
+  .section {padding:45px 0}
+  .section-heading h2 {font-size:25px}
+  .footer-grid {grid-template-columns:1fr 1fr}
+  .footer-grid>div:first-child {grid-column:1/-1}
+}
+@media(max-width:380px) {
+  .product-grid {grid-template-columns:1fr}
+  .product-image {height:210px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span><i class="fa-solid fa-location-dot"></i> Abidjan, Côte d'Ivoire</span>
+    <span><i class="fa-brands fa-whatsapp"></i> Commandes WhatsApp : 21655061653</span>
+  </div>
+</div>
+
+<header>
+  <div class="container nav">
+    <a href="#accueil" class="logo">
+      <div class="logo-icon"><i class="fa-solid fa-car"></i></div>
+      <div>
+        <h1>PIÈCES AUTO <span>KOUASSI</span></h1>
+        <small>Votre partenaire automobile</small>
+      </div>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#accueil">Accueil</a>
+      <a href="#catalogue">Catalogue</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="cart-btn" onclick="openCart()" aria-label="Ouvrir le panier">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="menu-btn" onclick="toggleMenu()" aria-label="Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+  <div class="container hero-content">
+    <span class="hero-label">PIÈCES AUTOMOBILES À ABIDJAN</span>
+    <h2>La bonne pièce pour <span>votre véhicule.</span></h2>
+    <p>Découvrez notre catalogue de pièces automobiles. Trouvez votre pièce et contactez-nous directement sur WhatsApp pour passer votre commande.</p>
+    <div class="hero-buttons">
+      <a href="#catalogue" class="btn btn-orange">
+        <i class="fa-solid fa-cart-shopping"></i> Voir le catalogue
+      </a>
+      <a href="https://wa.me/21655061653" target="_blank" class="btn btn-outline">
+        <i class="fa-brands fa-whatsapp"></i> Nous contacter
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container feature-grid">
+    <div class="feature">
+      <i class="fa-solid fa-gears"></i>
+      <div><strong>Pièces automobiles</strong><small>Plusieurs catégories</small></div>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-tags"></i>
+      <div><strong>Prix affichés</strong><small>En FCFA</small></div>
+    </div>
+    <div class="feature">
+      <i class="fa-brands fa-whatsapp"></i>
+      <div><strong>Commande directe</strong><small>Via WhatsApp</small></div>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-mobile-screen"></i>
+      <div><strong>Site responsive</strong><small>Mobile et ordinateur</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="section catalog" id="catalogue">
+  <div class="container">
+    <div class="section-heading">
+      <span>Notre sélection</span>
+      <h2>Catalogue des pièces</h2>
+      <p>Recherchez et choisissez les pièces dont vous avez besoin.</p>
+    </div>
+
+    <div class="toolbar">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" id="searchInput" placeholder="Rechercher une pièce...">
+      </div>
+      <select id="sortSelect">
+        <option value="default">Trier les produits</option>
+        <option value="low">Prix croissant</option>
+        <option value="high">Prix décroissant</option>
+        <option value="name">Nom A à Z</option>
+      </select>
+    </div>
+
+    <div class="category-list" id="categoryList">
+      <button class="category-btn active" data-category="Tous">Tout</button>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+      <div class="empty-state">Chargement des produits...</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="apropos">
+  <div class="container about-grid">
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=85" alt="Atelier automobile">
+    </div>
+    <div class="about-text">
+      <span style="color:#f47b20;font-size:11px;font-weight:800;letter-spacing:2px">QUI SOMMES-NOUS ?</span>
+      <h2>Bienvenue chez Pièces Auto Kouassi</h2>
+      <p>Nous vous proposons un catalogue de pièces automobiles pour vous aider à trouver les articles adaptés à vos besoins.</p>
+      <p>Consultez les produits, vérifiez les prix et envoyez votre demande directement par WhatsApp.</p>
+      <ul>
+        <li><i class="fa-solid fa-circle-check"></i> Catalogue organisé par catégories</li>
+        <li><i class="fa-solid fa-circle-check"></i> Informations produits modifiables facilement</li>
+        <li><i class="fa-solid fa-circle-check"></i> Commandes simples sur WhatsApp</li>
+      </ul>
+      <a href="#catalogue" class="btn btn-orange">Découvrir nos produits</a>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="section-heading">
+          <span>Restons en contact</span>
+          <h2>Contactez-nous</h2>
+          <p>Une question sur une pièce ? Envoyez-nous un message.</p>
+        </div>
+        <div class="contact-card">
+          <i class="fa-brands fa-whatsapp"></i>
+          <h3>WhatsApp</h3>
+          <p>21655061653</p>
+          <a href="https://wa.me/21655061653" target="_blank" class="btn btn-orange" style="margin-top:13px">Écrire sur WhatsApp</a>
+        </div>
+        <div class="contact-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>Localisation</h3>
+          <p>Abidjan, Côte d'Ivoire</p>
+        </div>
+      </div>
+      <div class="contact-map">
+        <div>
+          <i class="fa-solid fa-map-location-dot"></i>
+          <h3>Pièces Auto Kouassi</h3>
+          <p style="color:#aaa;font-size:12px;margin-top:8px">Abidjan, Côte d'Ivoire</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Abidjan+Cote+d%27Ivoire" target="_blank" class="btn btn-orange" style="margin-top:18px">Voir Abidjan sur la carte</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>PIÈCES AUTO KOUASSI</h3>
+        <p>Votre catalogue de pièces automobiles à Abidjan. Découvrez nos produits et commandez directement sur WhatsApp.</p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <a href="#accueil">Accueil</a>
+        <a href="#catalogue">Catalogue</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <a href="https://wa.me/21655061653" target="_blank">WhatsApp</a>
+        <a href="#contact">Abidjan, Côte d'Ivoire</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> Pièces Auto Kouassi Abidjan. Tous droits réservés.
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/21655061653" target="_blank" aria-label="WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<div class="cart-panel" id="cartPanel" onclick="outsideCart(event)">
+  <div class="cart-content">
+    <div class="cart-header">
+      <h2><i class="fa-solid fa-cart-shopping"></i> Mon panier</h2>
+      <button class="close-cart" onclick="closeCart()">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total">
+      <div><span>Total</span><span id="cartTotal">0 FCFA</span></div>
+      <button class="checkout-btn" onclick="checkout()">
+        <i class="fa-brands fa-whatsapp"></i> Commander sur WhatsApp
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- Le catalogue et les prix viennent uniquement de produits.js -->
+<script src="produits.js"></script>
+
+<script>
+"use strict";
+
+const WHATSAPP_NUMBER = "21655061653";
+let products = [];
+let cart = JSON.parse(localStorage.getItem("kouassi_cart") || "[]");
+let activeCategory = "Tous";
+
+const grid = document.getElementById("productGrid");
+const searchInput = document.getElementById("searchInput");
+const sortSelect = document.getElementById("sortSelect");
+
+function money(value) {
+  return new Intl.NumberFormat("fr-FR").format(value) + " FCFA";
+}
+
+function escapeHTML(value) {
+  return String(value ?? "").replace(/[&<>"']/g, char => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+  })[char]);
+}
+
+function getProducts() {
+  if (!Array.isArray(window.PRODUITS)) {
+    grid.innerHTML = '<div class="empty-state">Impossible de charger produits.js. Vérifiez le nom du fichier.</div>';
+    return;
+  }
+  products = window.PRODUITS.map((p, i) => ({
+    id: String(p.id ?? i + 1),
+    name: String(p.name ?? "Produit"),
+    description: String(p.description ?? ""),
+    category: String(p.category ?? "Autres"
