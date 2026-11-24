@@ -1,0 +1,158 @@
+
+/*
+====================================================
+       PIÈCES AUTO KOUASSI - GESTION DU MAGASIN
+====================================================
+
+TU MODIFIES UNIQUEMENT CE FICHIER.
+
+1. CONFIG : informations du magasin
+2. PRODUITS : catalogue, prix et photos
+
+Ne modifie pas index.html.
+
+====================================================
+              1. MAGASIN
+====================================================
+*/
+
+window.CONFIG = {
+
+  nom: "Pièces Auto Kouassi",
+
+  whatsapp: "21655061653",
+
+  adresse: "Abidjan, Côte d'Ivoire",
+
+  ville: "Abidjan",
+
+  pays: "Côte d'Ivoire",
+
+  devise: "FCFA",
+
+  description: "Bienvenue chez Pièces Auto Kouassi à Abidjan. Découvrez notre catalogue de pièces automobiles et contactez-nous directement sur WhatsApp pour vos commandes.",
+
+  photoMagasin: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=85"
+
+};
+
+
+/*
+====================================================
+              2. CATALOGUE PRODUITS
+====================================================
+
+Pour chaque produit :
+
+id          = Identifiant unique
+name        = Nom du produit
+price       = Prix en FCFA
+image       = Adresse de la photo
+description = Description
+category    = Catégorie
+
+Pour ajouter un produit, copie un bloc complet
+et change son identifiant.
+
+====================================================
+*/
+
+window.PRODUITS = [
+
+  {
+    id: "P001",
+    name: "Plaquettes de frein",
+    price: 15000,
+    image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=700&q=80",
+    description: "Plaquettes de frein pour automobile. Vérifiez la compatibilité avec votre véhicule.",
+    category: "Freinage"
+  },
+
+  {
+    id: "P002",
+    name: "Disque de frein",
+    price: 25000,
+    image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=700&q=80",
+    description: "Disque de frein automobile. Plusieurs références selon les véhicules.",
+    category: "Freinage"
+  },
+
+  {
+    id: "P003",
+    name: "Filtre à huile",
+    price: 5000,
+    image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=700&q=80",
+    description: "Filtre à huile pour entretien et protection du moteur.",
+    category: "Filtres"
+  },
+
+  {
+    id: "P004",
+    name: "Filtre à air",
+    price: 8000,
+    image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=700&q=80",
+    description: "Filtre à air automobile pour différents modèles de véhicules.",
+    category: "Filtres"
+  },
+
+  {
+    id: "P005",
+    name: "Batterie automobile",
+    price: 65000,
+    image: "https://images.unsplash.com/photo-1600661653561-629509216228?auto=format&fit=crop&w=700&q=80",
+    description: "Batterie automobile. Vérifiez la capacité et les dimensions avant commande.",
+    category: "Batteries"
+  },
+
+  {
+    id: "P006",
+    name: "Amortisseur automobile",
+    price: 45000,
+    image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=700&q=80",
+    description: "Amortisseur pour suspension et confort de conduite.",
+    category: "Suspension"
+  },
+
+  {
+    id: "P007",
+    name: "Pièce moteur",
+    price: 12000,
+    image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=700&q=80",
+    description: "Pièce détachée moteur. Demandez la référence adaptée à votre véhicule.",
+    category: "Moteur"
+  },
+
+  {
+    id: "P008",
+    name: "Accessoire automobile",
+    price: 18000,
+    image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=700&q=80",
+    description: "Accessoire automobile pour équiper votre véhicule.",
+    category: "Accessoires"
+  },
+
+  {
+    id: "P009",
+    name: "Bougies d'allumage",
+    price: 10000,
+    image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=700&q=80",
+    description: "Bougies d'allumage pour moteur essence.",
+    category: "Moteur"
+  },
+
+  {
+    id: "P010",
+    name: "Rétroviseur automobile",
+    price: 20000,
+    image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=700&q=80",
+    description: "Rétroviseur automobile. Vérifiez le modèle et le côté.",
+    category: "Carrosserie"
+  }
+
+];
+
+/*
+====================================================
+                 FIN DU FICHIER
+====================================================
+*/
